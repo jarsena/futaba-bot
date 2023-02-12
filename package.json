@@ -1,0 +1,29 @@
+{
+  "name": "futaba-bot",
+  "version": "1.0.0",
+  "description": "handles mod stuff that we'd rather automate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarsena/futaba-bot.git"
+  },
+  "keywords": [
+    "calculations"
+  ],
+  "author": "jarsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarsena/futaba-bot/issues"
+  },
+  "homepage": "https://github.com/jarsena/futaba-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0"
+  }
+}
