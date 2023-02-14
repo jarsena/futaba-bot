@@ -24,6 +24,7 @@ module.exports = {
                     { name: 'crit', value: 'critical'},
                     { name: 'technical', value: 'tech'},
                     { name: 'weakness', value:'weak'},
+                    { name: 'resist', value:'res'}
                 )),
     async execute(interaction) {
         const specialModifier = interaction.options.getString('modifier');
@@ -32,12 +33,16 @@ module.exports = {
         {
             const critDmg = initialDmg *2 ;
             await interaction.reply(`Scatter them! \n\n Your skill did ${critDmg} damage!`);
-        } else if(specialModifer == 'tech'){
+        } else if(specialModifier == 'tech'){
             const techDmg = initialDmg * 1.8;
             await interaction.reply(`Floor 'em! \n \n Your skill did ${techDmg} damage!`);
         } else if(specialModifier == 'weak'){
             const weakDmg = initialDmg * 1.4;
             await interaction.reply(`Hit 'em where it hurts! \n \n Your skill did ${weakDmg} damage!`);
+        } else if(specialModifier == 'res')
+        {
+            const resDmg = initialDmg * 0.5;
+            await interaction.reply(`Oof.... \n\n Your skill did ${resDmg} damage.`);
         } else{
         await interaction.reply(`Let's get crackin'! \n\n Your skill did ${initialDmg} damage!`);
         }
