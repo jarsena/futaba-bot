@@ -32,10 +32,19 @@ module.exports = {
         .addIntegerOption(option =>
             option
                 .setName('enemyluck')
-                .setDescription('If your attack can crit, please input your opponent\'s Luck stat.')),
+                .setDescription('If your attack can crit, please input your opponent\'s Luck stat.'))
+        .addStringOption(option =>
+            option
+                .setName('sukumod')
+                .setDescription('Sukunda or Sukukaja?')
+                .addChoices(
+                    { name:'None', value: 'none'},
+                    { name:'Sukukaja', value: 'sukukaja'},
+                    { name:'Sukunda', value: 'sukunda'},
+                )),
         async execute(interaction){
-            const hitThresh = agiMod(interaction.options.getInteger('baseaccuracy'),interaction.options.getInteger('agility'), interaction.options.getInteger('enemyagility'));
-            const critThresh = critMod(interaction.options.getInteger('basecrit'), interaction.options.getInteger('luck'), interaction.options.getInteger('enemyluck'));
+            const hitThresh = agiMod(interaction.options.getInteger('baseaccuracy'),interaction.options.getInteger('agility'), interaction.options.getInteger('enemyagility')) * getMods(interaction.options.getString('sukumod'));
+            const critThresh = critMod(interaction.options.getInteger('basecrit'), interaction.options.getInteger('luck'), interaction.options.getInteger('enemyluck')) * getMods(interaction.options.getString('sukumod'));
             var hitRoll = Math.floor(Math.random() * 100);
             switch(true) {
                 case hitRoll >= critThresh:
@@ -111,4 +120,27 @@ function critMod(basecrit, luck1, luck2)
     }
     critChance = 100 - (basecrit + luckMod);
     return critChance;
+}
+
+function getMods(buffValue)
+{
+    var buffMod;
+    switch(true) {
+        case buffValue == 'none':
+            buffMod = 1.0;
+            console.log('no mod');
+            break;
+        case buffValue == 'sukukaja':
+            buffMod = 1.2;
+            console.log('kaja');
+            break;
+        case buffValue == 'sukunda':
+            buffMod = 0.8;
+            console.log('kunda');
+            break;
+        default:
+            buffMod = 1.0;
+            console.log('default');
+    }
+    return buffMod;
 }
