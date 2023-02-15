@@ -57,20 +57,21 @@ module.exports = {
         const initialDmg = Math.round((Math.sqrt(interaction.options.getInteger('skillpower')) * Math.sqrt(interaction.options.getInteger('stat'))));
         if(specialModifier == 'critical')
         {
-            const critDmg = ((atkMod * initialDmg) * 2) / defense;
+            const critDmg = Math.round(((atkMod * initialDmg) * 2) / defense);
             await interaction.reply(`Scatter them! \n\n Your skill did ${critDmg} damage!`);
         } else if(specialModifier == 'tech'){
-            const techDmg = ((atkMod * initialDmg) * 1.8) / defense;
+            const techDmg = Math.round(((atkMod * initialDmg) * 1.8) / defense);
             await interaction.reply(`Floor 'em! \n \n Your skill did ${techDmg} damage!`);
         } else if(specialModifier == 'weak'){
-            const weakDmg = ((atkMod * initialDmg) * 1.4) / defense;
+            const weakDmg = Math.round(((atkMod * initialDmg) * 1.4) / defense);
             await interaction.reply(`Hit 'em where it hurts! \n \n Your skill did ${weakDmg} damage!`);
         } else if(specialModifier == 'res')
         {
-            const resDmg = ((atkMod * initialDmg) * 0.5) / defense;
+            const resDmg = Math.round(((atkMod * initialDmg) * 0.5) / defense);
             await interaction.reply(`Oof.... \n\n Your skill did ${resDmg} damage.`);
         } else{
-        await interaction.reply(`Let's get crackin'! \n\n Your skill did ${(atkMod * initialDmg)/defense} damage!`);
+        const basicDmg = Math.round((atkMod * initialDmg)/defense);
+        await interaction.reply(`Let's get crackin'! \n\n Your skill did ${basicDmg} damage!`);
         }
     }
 }
