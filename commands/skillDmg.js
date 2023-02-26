@@ -48,29 +48,44 @@ module.exports = {
                     { name:'None', value:'none'},
                     { name:'Rakukaja', value: 'rakukaja'},
                     { name:'Rakunda', value: 'rakunda'},
-                )),
+                ))
+        .addBooleanOption(option =>
+            option
+                .setName('charged')
+                .setDescription('Charged/Concentrated?')),
         
     async execute(interaction) {
         const specialModifier = interaction.options.getString('modifier');
         const atkMod = getMods(interaction.options.getString('attackmod'));
         const defense = getMods(interaction.options.getString('defmod')) * Math.sqrt(interaction.options.getInteger('endurance'));
+        var chargeMult;
+        if (interaction.options.getBoolean('charged'))
+        {
+            chargeMult = 2.5;
+            console.log('charged');
+        }
+        else
+        {
+            chargeMult = 1;
+            console.log('uncharged');
+        }
         const initialDmg = Math.round((Math.sqrt(interaction.options.getInteger('skillpower')) * Math.sqrt(interaction.options.getInteger('stat'))));
         if(specialModifier == 'critical')
         {
-            const critDmg = Math.round(((atkMod * initialDmg) * 2) / defense);
+            const critDmg = Math.round((chargeMult * ((atkMod * initialDmg) * 2)) / defense);
             await interaction.reply(`Scatter them! \n\n Your skill did ${critDmg} damage!`);
         } else if(specialModifier == 'tech'){
-            const techDmg = Math.round(((atkMod * initialDmg) * 1.8) / defense);
+            const techDmg = Math.round((chargeMult * ((atkMod * initialDmg) * 1.8)) / defense);
             await interaction.reply(`Floor 'em! \n \n Your skill did ${techDmg} damage!`);
         } else if(specialModifier == 'weak'){
-            const weakDmg = Math.round(((atkMod * initialDmg) * 1.4) / defense);
+            const weakDmg = Math.round((chargeMult * ((atkMod * initialDmg) * 1.4)) / defense);
             await interaction.reply(`Hit 'em where it hurts! \n \n Your skill did ${weakDmg} damage!`);
         } else if(specialModifier == 'res')
         {
-            const resDmg = Math.round(((atkMod * initialDmg) * 0.5) / defense);
+            const resDmg = Math.round((chargeMult * ((atkMod * initialDmg) * 0.5)) / defense);
             await interaction.reply(`Oof.... \n\n Your skill did ${resDmg} damage.`);
         } else{
-        const basicDmg = Math.round((atkMod * initialDmg)/defense);
+        const basicDmg = Math.round((chargeMod * (atkMod * initialDmg))/defense);
         await interaction.reply(`Let's get crackin'! \n\n Your skill did ${basicDmg} damage!`);
         }
     }
