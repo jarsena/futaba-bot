@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Debugged Maya",
+        "stats": [5, 5, 3, 3, 3],
+        "hp": 73,
+        "sp": 51,
+        "resists": ["elec", "fire"],
+        "drain": ["wind"],
+        "repel": ["nuke"],
+        "block": ["curse"],
+        "weakness": ["psi", "ice"]
+
+    },
+    {
+        "name": "Lying Hablerie",
+        "stats": [5, 5, 3, 3, 3],
+        "hp": 73,
+        "sp": 51,
+        "resists": ["elec", "fire"],
+        "drain": [],
+        "repel": [],
+        "block": [],
+        "weakness": ["psi", "ice"]
+
+    }
+]

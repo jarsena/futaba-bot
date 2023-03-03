@@ -85,7 +85,7 @@ module.exports = {
             const resDmg = Math.round((chargeMult * ((atkMod * initialDmg) * 0.5)) / defense);
             await interaction.reply(`Oof.... \n\n Your skill did ${resDmg} damage.`);
         } else{
-        const basicDmg = Math.round((chargeMod * (atkMod * initialDmg))/defense);
+        const basicDmg = Math.round((chargeMult * (atkMod * initialDmg))/defense);
         await interaction.reply(`Let's get crackin'! \n\n Your skill did ${basicDmg} damage!`);
         }
     }

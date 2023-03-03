@@ -1,0 +1,395 @@
+[
+    {
+        "name": "Garu",
+        "element": "wind",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Magaru",
+        "element": "wind",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Garula",
+        "element": "wind",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Magarula",
+        "element": "wind",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Garudyne",
+        "element": "wind",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Magarudyne",
+        "element": "wind",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Panta Rhei",
+        "element": "wind",
+        "basepower": 300,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Bufu",
+        "element": "ice",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mabufu",
+        "element": "ice",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Bufula",
+        "element": "ice",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Mabufula",
+        "element": "ice",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Bufudyne",
+        "element": "ice",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mabufudyne",
+        "element": "ice",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Diamond Dust",
+        "element": "ice",
+        "basepower": 300,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Ice Age",
+        "element": "ice",
+        "basepower": 300,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Agi",
+        "element": "fire",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Maragi",
+        "element": "fire",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Agilao",
+        "element": "fire",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Maragion",
+        "element": "fire",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Agidyne",
+        "element": "fire",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Maragidyne",
+        "element": "fire",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Inferno",
+        "element": "fire",
+        "basepower": 300,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Blazing Hell",
+        "element": "fire",
+        "basepower": 300,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Zio",
+        "element": "elec",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mazio",
+        "element": "elec",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Zionga",
+        "element": "elec",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Mazionga",
+        "element": "elec",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Ziodyne",
+        "element": "elec",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Maziodyne",
+        "element": "elec",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Thunder Reign",
+        "element": "elec",
+        "basepower": 300,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Psi",
+        "element": "psi",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mapsi",
+        "element": "psi",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Psio",
+        "element": "psi",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Mapsio",
+        "element": "psi",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Psiodyne",
+        "element": "psi",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mapsiodyne",
+        "element": "psi",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Psycho Force",
+        "element": "psi",
+        "basepower": 300,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Frei",
+        "element": "nuke",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mafrei",
+        "element": "nuke",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Freila",
+        "element": "nuke",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Mafreila",
+        "element": "nuke",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Freidyne",
+        "element": "nuke",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Mafreidyne",
+        "element": "nuke",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Atomic Flare",
+        "element": "nuke",
+        "basepower": 300,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Kouha",
+        "element": "bless",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Makouha",
+        "element": "bless",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Kouga",
+        "element": "bless",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Makouga",
+        "element": "bless",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Kougaon",
+        "element": "bless",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Makougaon",
+        "element": "bless",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Eiha",
+        "element": "curse",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Maeiha",
+        "element": "curse",
+        "basepower": 50,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Eiga",
+        "element": "curse",
+        "basepower": 100,
+        "baseacc": 99,
+        "crit": 0
+    },
+    {
+        "name": "Maeiga",
+        "element": "curse",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 0
+    },
+    {
+        "name": "Eigaon",
+        "element": "curse",
+        "basepower": 150,
+        "baseacc": 95,
+        "crit": 0
+    },
+    {
+        "name": "Maeigaon",
+        "element": "curse",
+        "basepower": 150,
+        "baseacc": 90,
+        "crit": 0
+    }
+
+]
