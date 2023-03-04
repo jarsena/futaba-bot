@@ -5,6 +5,7 @@ module.exports = {
         .setName('level-up')
         .setDescription('So you\'ve gained a level! Come see what stats you got!'),
     async execute(interaction) {
+        
         const stats = ['Strength', 'Magic', 'Endurance', 'Agility', 'Luck'];
         const random1 = Math.floor(Math.random() * stats.length);
         const random2 = Math.floor(Math.random() * stats.length);

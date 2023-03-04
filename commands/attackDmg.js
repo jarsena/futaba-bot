@@ -1,18 +1,20 @@
 const { SlashCommandBuilder } = require ('discord.js');
+var shadows = require('./activeShadows.json');
+var personas = require('./persona-list.json');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('basic-attack-damage')
+        .setName('basic-attack')
         .setDescription('Calculates the damage from a basic weapon attack.')
-        .addIntegerOption(option =>
+        .addStringOption(option =>
             option
-                .setName('strength')
-                .setDescription('Input your Strength stat.')
+                .setName('attacker')
+                .setDescription('Who\'s attacking? Mind your caps and spaces!')
                 .setRequired(true))
-        .addIntegerOption(option =>
+        .addStringOption(option =>
             option
-                .setName('endurance')
-                .setDescription('Input the enemy\'s Endurance stat.')
+                .setName('defender')
+                .setDescription('Who\'s defending? Again, proper caps and spaces!')
                 .setRequired(true))
         .addStringOption(option =>
             option
@@ -33,10 +35,12 @@ module.exports = {
                     { name:'Rakunda', value: 'rakunda'},
                 )),
     async execute(interaction) {
-        const basePower = getMods(interaction.options.getString('attackmod')) * Math.sqrt(interaction.options.getInteger('strength'));
-        const def = getMods(interaction.options.getString('defmod')) * Math.sqrt((interaction.options.getInteger('endurance')))
+        var attacker = getEntity(interaction.options.getString('attacker'));
+        var defender = getEntity(interaction.options.getString('defender'));
+        const basePower = getMods(interaction.options.getString('attackmod')) * Math.sqrt(attacker.stats[1]);
+        const def = getMods(interaction.options.getString('defmod')) * Math.sqrt(defender.stats[3]);
         const totalDmg = Math.round(basePower/def);
-        await interaction.reply(`Lemme get that for you! \n\n Your attack did ${totalDmg} damage!`);
+        await interaction.reply(`Your attack did ${totalDmg} damage!`);
     }
 }
 
@@ -61,4 +65,35 @@ function getMods(buffValue)
             console.log('default');
     }
     return buffMod;
+}
+
+function getEntity(entity)
+{
+    var obj;
+         //retrieve the skills, persona and shadow from the json lists
+        /*for (let i = 0; i < skills.length; i++)
+        {
+            if (entity == skills[i].name)
+            {
+                obj = skills[i];
+                break;
+            }
+        }*/
+        for (let i = 0; i < shadows.length; i++)
+        {
+            if (entity == shadows[i].name)
+            {
+                obj = shadows[i];
+                break;
+            }
+        }
+        for (let i = 0; i < personas.length; i++)
+        {
+            if (entity == personas[i].name)
+            {
+                obj = personas[i];
+                break;
+            }
+            }
+        return obj;    
 }

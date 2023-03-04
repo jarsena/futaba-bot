@@ -1,6 +1,7 @@
 [
     {
         "name": "Debugged Maya",
+        "entitytype": "shadow",
         "stats": [5, 5, 3, 3, 3],
         "hp": 73,
         "sp": 51,
@@ -13,6 +14,7 @@
     },
     {
         "name": "Lying Hablerie",
+        "entitytype": "shadow",
         "stats": [5, 5, 3, 3, 3],
         "hp": 73,
         "sp": 51,

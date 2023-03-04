@@ -1,5 +1,33 @@
 [
     {
+        "name": "Cleave",
+        "element": "phys",
+        "basepower": 65,
+        "baseacc": 90,
+        "crit": 20,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Double Fangs",
+        "element": "phys",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0,
+        "hitmin": 2,
+        "hitmax": 2
+    },
+    {
+        "name": "Poison Skewer",
+        "element": "phys",
+        "basepower": 50,
+        "baseacc": 95,
+        "crit": 0,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailchance": 20
+    },
+    {
         "name": "Garu",
         "element": "wind",
         "basepower": 50,
@@ -390,6 +418,10 @@
         "basepower": 150,
         "baseacc": 90,
         "crit": 0
+    },
+    {
+        "name": "Poisma",
+        "ailment": "poison",
+        "ailchance": 50
     }
-
 ]
