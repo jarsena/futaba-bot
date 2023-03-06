@@ -28,7 +28,11 @@ module.exports = {
             var skill = getEntity(interaction.options.getString('skill'));
             var attacker = getEntity(interaction.options.getString('attacker'));
             var defender = getEntity(interaction.options.getString('defender'));
-            const hitChance = getHitChance(skill.ailchance, attacker.stats[5], defender.stats[5]);
+            const hitChance = getHitChance(skill.ailchance, attacker.stats[4], defender.stats[4]);
+            //console.log(`Attacker's Luck: ${attacker.stats[4]}`);
+            //console.log(`Attacker's Name: ${attacker.name}`);
+            //console.log(`Defender's Luck: ${defender.stats[4]}`);
+            //console.log(`Ailment chance in command: ${hitChance}`);
             var hitRoll = Math.floor(Math.random() * 100);
             if (hitRoll >= hitChance)
             {
@@ -43,7 +47,7 @@ module.exports = {
             }
             else
             {
-                interaction.reply(`Not this time...`)
+                interaction.reply(`Not this time... \n Your skill's base ailment chance was ${skill.ailchance}, your roll was ${hitRoll}, and to hit you needed a ${hitChance} or higher.`)
             }
 
         }
@@ -53,6 +57,7 @@ function getHitChance(basehit, luck1, luck2)
 {
     const luckMod = Math.floor((luck1 - luck2) * 0.3);
     var ailmentChance = 100 -(basehit + luckMod);
+    //console.log(`Ailment Chance within function: ${ailmentChance}`);
     return ailmentChance;
 }
 

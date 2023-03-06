@@ -69,15 +69,15 @@ module.exports = {
                 var stat;
                 if (skill.element == "phys")
                 {
-                    stat = attacker.stats[1];
+                    stat = attacker.stats[0];
                     //console.log(`The stat is strength, and its value is ${stat}.`);
                 }
                 else
                 {
-                    stat = attacker.stats[2];
+                    stat = attacker.stats[1];
                     //console.log(`The stat is magic, and its value is ${stat}.`);
                 }
-                const initialDmg = (Math.sqrt(skill.basepower) * Math.sqrt(stat)) / Math.sqrt(defender.stats[3]);
+                const initialDmg = (Math.sqrt(skill.basepower) * Math.sqrt(stat)) / Math.sqrt(defender.stats[2]);
                 const taruMod = getMods(interaction.options.getString('attackmod'));
                 const rakuMod = getMods(interaction.options.getString('defmod'));
                 var chargeMult;

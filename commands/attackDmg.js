@@ -33,13 +33,26 @@ module.exports = {
                     { name:'None', value:'none'},
                     { name:'Rakukaja', value: 'rakukaja'},
                     { name:'Rakunda', value: 'rakunda'},
-                )),
+                ))
+        .addBooleanOption(option =>
+            option
+                .setName('rage')
+                .setDescription('Is the attacker enraged?')),
     async execute(interaction) {
         var attacker = getEntity(interaction.options.getString('attacker'));
         var defender = getEntity(interaction.options.getString('defender'));
-        const basePower = getMods(interaction.options.getString('attackmod')) * Math.sqrt(attacker.stats[1]);
-        const def = getMods(interaction.options.getString('defmod')) * Math.sqrt(defender.stats[3]);
-        const totalDmg = Math.round(basePower/def);
+        const basePower = getMods(interaction.options.getString('attackmod')) * Math.sqrt(attacker.stats[0]);
+        const def = getMods(interaction.options.getString('defmod')) * Math.sqrt(defender.stats[2]);
+        var rage;
+        if(interaction.options.getBoolean('rage'))
+        {
+            rage = 2;
+        }
+        else
+        {
+            rage = 1;
+        }
+        const totalDmg = Math.round((basePower/def) * rage);
         await interaction.reply(`Your attack did ${totalDmg} damage!`);
     }
 }

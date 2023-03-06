@@ -1,10 +1,109 @@
 [
     {
+        "name": "Basic",
+        "element": "phys",
+        "baseacc": 95,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    
+    {
         "name": "Cleave",
         "element": "phys",
         "basepower": 65,
         "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Lunge",
+        "element": "phys",
+        "basepower": 60,
+        "baseacc": 95,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Giant Slice",
+        "element": "phys",
+        "basepower": 90,
+        "baseacc": 90,
+        "crit": 30,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Fatal End",
+        "element": "phys",
+        "basepower": 100,
+        "baseacc": 90,
+        "crit": 15,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Vicious Strike",
+        "element": "phys",
+        "basepower": 100,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Assault Dive",
+        "element": "phys",
+        "basepower": 150,
+        "baseacc": 90,
         "crit": 20,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Heat Wave",
+        "element": "phys",
+        "basepower": 150,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Megaton Raid",
+        "element": "phys",
+        "basepower": 250,
+        "baseacc": 90,
+        "crit": 25,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Vorpal Blade",
+        "element": "phys",
+        "basepower": 250,
+        "baseacc": 80,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "God's Hand",
+        "element": "phys",
+        "basepower": 450,
+        "baseacc": 90,
+        "crit": 15,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Gigantomachia",
+        "element": "phys",
+        "basepower": 450,
+        "baseacc": 85,
+        "crit": 5,
         "hitmin": 1,
         "hitmax": 1
     },
@@ -12,20 +111,238 @@
         "name": "Double Fangs",
         "element": "phys",
         "basepower": 50,
-        "baseacc": 95,
-        "crit": 0,
+        "baseacc": 90,
+        "crit": 10,
         "hitmin": 2,
         "hitmax": 2
     },
     {
+        "name": "Rampage",
+        "element": "phys",
+        "basepower": 35,
+        "baseacc": 70,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 3
+    },
+    {
+        "name": "Swift Strike",
+        "element": "phys",
+        "basepower": 35,
+        "baseacc": 70,
+        "crit": 10,
+        "hitmin": 3,
+        "hitmax": 4
+    },
+    {
+        "name": "Deathbound",
+        "element": "phys",
+        "basepower": 95,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 2
+    },
+    {
+        "name": "Agneyastra",
+        "element": "phys",
+        "basepower": 95,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 3
+    },
+    {
+        "name": "Tempest Slash",
+        "element": "phys",
+        "basepower": 30,
+        "baseacc": 86,
+        "crit": 10,
+        "hitmin": 3,
+        "hitmax": 5
+    },
+    {
         "name": "Poison Skewer",
         "element": "phys",
-        "basepower": 50,
-        "baseacc": 95,
-        "crit": 0,
+        "basepower": 60,
+        "baseacc": 90,
+        "crit": 10,
         "hitmin": 1,
         "hitmax": 1,
-        "ailchance": 20
+        "ailment": "poison",
+        "ailchance": 40
+    },
+    {
+        "name": "Virus Wave",
+        "element": "phys",
+        "basepower": 135,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "poison",
+        "ailchance": 40
+    }, 
+    {
+        "name": "Dream Needle",
+        "element": "phys",
+        "basepower": 70,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "sleep",
+        "ailchance": 40
+    },
+    {
+        "name": "Dormin Rush",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "sleep",
+        "ailchance": 40
+    },
+    {
+        "name": "Terror Claw",
+        "element": "phys",
+        "basepower": 70,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "fear",
+        "ailchance": 40
+    },
+    {
+        "name": "Atom Smasher",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "fear",
+        "ailchance": 40
+    },
+    {
+        "name": "Bloodbath",
+        "element": "phys",
+        "basepower": 135,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "fear",
+        "ailchance": 40
+    },
+    {
+        "name": "Headbutt",
+        "element": "phys",
+        "basepower": 75,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "forget",
+        "ailchance": 40
+    },
+    {
+        "name": "Memory Blow",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 90,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "forget",
+        "ailchance": 40
+    },
+    {
+        "name": "Hysterical Slap",
+        "element": "phys",
+        "basepower": 75,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "rage",
+        "ailchance": 40
+    },
+    {
+        "name": "Oni-Kagura",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "rage",
+        "ailchance": 40
+    },
+    {
+        "name": "Skull Cracker",
+        "element": "phys",
+        "basepower": 75,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "confuse",
+        "ailchance": 40
+    },
+    {
+        "name": "Mind Slice",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "confuse",
+        "ailchance": 40
+    },
+    {
+        "name": "Lucky Punch",
+        "element": "phys",
+        "basepower": 25,
+        "baseacc": 75,
+        "crit": 50,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Miracle Punch",
+        "element": "phys",
+        "basepower": 70,
+        "baseacc": 75,
+        "crit": 55,
+        "hitmin": 1,
+        "hitmax": 1
+    },
+    {
+        "name": "Brain Shake",
+        "element": "phys",
+        "basepower": 85,
+        "baseacc": 90,
+        "crit": 10,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "brainwash",
+        "ailchance": 40
+    },
+    {
+        "name": "Brain Buster",
+        "element": "phys",
+        "basepower": 135,
+        "baseacc": 80,
+        "crit": 5,
+        "hitmin": 1,
+        "hitmax": 1,
+        "ailment": "brainwash",
+        "ailchance": 40
     },
     {
         "name": "Garu",
@@ -81,6 +398,8 @@
         "element": "ice",
         "basepower": 50,
         "baseacc": 95,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -88,6 +407,8 @@
         "element": "ice",
         "basepower": 50,
         "baseacc": 90,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -95,6 +416,8 @@
         "element": "ice",
         "basepower": 100,
         "baseacc": 99,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -102,6 +425,8 @@
         "element": "ice",
         "basepower": 100,
         "baseacc": 90,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -109,6 +434,8 @@
         "element": "ice",
         "basepower": 150,
         "baseacc": 95,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -116,6 +443,8 @@
         "element": "ice",
         "basepower": 150,
         "baseacc": 90,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -123,6 +452,8 @@
         "element": "ice",
         "basepower": 300,
         "baseacc": 95,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -130,6 +461,8 @@
         "element": "ice",
         "basepower": 300,
         "baseacc": 90,
+        "ailment": "freeze",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -137,6 +470,8 @@
         "element": "fire",
         "basepower": 50,
         "baseacc": 95,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -144,6 +479,8 @@
         "element": "fire",
         "basepower": 50,
         "baseacc": 90,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -151,6 +488,8 @@
         "element": "fire",
         "basepower": 100,
         "baseacc": 99,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -158,6 +497,8 @@
         "element": "fire",
         "basepower": 100,
         "baseacc": 90,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -165,6 +506,8 @@
         "element": "fire",
         "basepower": 150,
         "baseacc": 95,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -172,6 +515,8 @@
         "element": "fire",
         "basepower": 150,
         "baseacc": 90,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -179,6 +524,8 @@
         "element": "fire",
         "basepower": 300,
         "baseacc": 95,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -186,6 +533,8 @@
         "element": "fire",
         "basepower": 300,
         "baseacc": 90,
+        "ailment": "burn",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -193,6 +542,8 @@
         "element": "elec",
         "basepower": 50,
         "baseacc": 95,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -200,6 +551,8 @@
         "element": "elec",
         "basepower": 50,
         "baseacc": 90,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -207,6 +560,8 @@
         "element": "elec",
         "basepower": 100,
         "baseacc": 99,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -214,6 +569,8 @@
         "element": "elec",
         "basepower": 100,
         "baseacc": 90,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -221,6 +578,8 @@
         "element": "elec",
         "basepower": 150,
         "baseacc": 95,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -228,6 +587,8 @@
         "element": "elec",
         "basepower": 150,
         "baseacc": 90,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -235,6 +596,8 @@
         "element": "elec",
         "basepower": 300,
         "baseacc": 95,
+        "ailment": "shock",
+        "ailchance": 30,
         "crit": 0
     },
     {
@@ -422,6 +785,72 @@
     {
         "name": "Poisma",
         "ailment": "poison",
-        "ailchance": 50
+        "ailchance": 60
+    },
+    {
+        "name": "Poison Mist",
+        "ailment": "poison",
+        "ailchance": 30
+    },
+    {
+        "name": "Dormina",
+        "ailment": "sleep",
+        "ailchance": 60
+    },
+    {
+        "name": "Lullaby",
+        "ailment": "sleep",
+        "ailchance": 30
+    },
+    {
+        "name": "Marin Karin",
+        "ailment": "brainwash",
+        "ailchance": 60
+    },
+    {
+        "name": "Brain Jack",
+        "ailment": "brainwash",
+        "ailchance": 30
+    },
+    {
+        "name": "Makajama",
+        "ailment": "forget",
+        "ailchance": 60
+    },
+    {
+        "name": "Makajamaon",
+        "ailment": "forget",
+        "ailchance": 30
+    },
+    {
+        "name": "Taunt",
+        "ailment": "Rage",
+        "ailchance": 60
+    },
+    {
+        "name": "Wage War",
+        "ailment": "poison",
+        "ailchance": 30
+    },
+    {
+        "name": "Evil Touch",
+        "ailment": "fear",
+        "ailchance": 60
+    },
+    {
+        "name": "Evil Smile",
+        "ailment": "fear",
+        "ailchance": 30
+    },
+    {
+        "name": "Pulinpa",
+        "ailment": "confuse",
+        "ailchance": 60
+    },
+    {
+        "name": "Tentarafoo",
+        "ailment": "confuse",
+        "ailchance": 60
     }
+
 ]

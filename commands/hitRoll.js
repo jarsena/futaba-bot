@@ -51,8 +51,8 @@ module.exports = {
             {
                 rageMod = 1;
             }
-            const hitThresh = agiMod(skill.baseacc,attacker.stats[4], defender.stats[4]) * getMods(interaction.options.getString('sukumod')) * rageMod;
-            var critThresh = critMod(skill.crit, attacker.stats[5], defender.stats[5]) * getMods(interaction.options.getString('sukumod')) * rageMod;
+            const hitThresh = agiMod(skill.baseacc,attacker.stats[3], defender.stats[3]) * getMods(interaction.options.getString('sukumod')) * rageMod;
+            var critThresh = critMod(skill.crit, attacker.stats[4], defender.stats[4]) * getMods(interaction.options.getString('sukumod')) * rageMod;
             if (skill.element != "phys")
             {
                 critThresh = 100;
