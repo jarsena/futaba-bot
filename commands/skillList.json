@@ -156,8 +156,8 @@
         "name": "Tempest Slash",
         "element": "phys",
         "basepower": 30,
-        "baseacc": 86,
-        "crit": 10,
+        "baseacc": 85,
+        "crit": 5,
         "hitmin": 3,
         "hitmax": 5
     },
@@ -181,7 +181,7 @@
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "poison",
-        "ailchance": 40
+        "ailchance": 20
     }, 
     {
         "name": "Dream Needle",
@@ -197,13 +197,13 @@
     {
         "name": "Dormin Rush",
         "element": "phys",
-        "basepower": 85,
+        "basepower": 90,
         "baseacc": 80,
         "crit": 5,
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "sleep",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Terror Claw",
@@ -220,12 +220,12 @@
         "name": "Atom Smasher",
         "element": "phys",
         "basepower": 85,
-        "baseacc": 80,
+        "baseacc": 90,
         "crit": 5,
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "fear",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Bloodbath",
@@ -236,7 +236,7 @@
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "fear",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Headbutt",
@@ -252,13 +252,13 @@
     {
         "name": "Memory Blow",
         "element": "phys",
-        "basepower": 85,
-        "baseacc": 90,
+        "basepower": 90,
+        "baseacc": 80,
         "crit": 5,
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "forget",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Hysterical Slap",
@@ -274,13 +274,13 @@
     {
         "name": "Oni-Kagura",
         "element": "phys",
-        "basepower": 85,
+        "basepower": 90,
         "baseacc": 80,
         "crit": 5,
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "rage",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Skull Cracker",
@@ -296,13 +296,13 @@
     {
         "name": "Mind Slice",
         "element": "phys",
-        "basepower": 85,
+        "basepower": 90,
         "baseacc": 80,
         "crit": 5,
         "hitmin": 1,
         "hitmax": 1,
         "ailment": "confuse",
-        "ailchance": 40
+        "ailchance": 20
     },
     {
         "name": "Lucky Punch",
@@ -325,7 +325,7 @@
     {
         "name": "Brain Shake",
         "element": "phys",
-        "basepower": 85,
+        "basepower": 90,
         "baseacc": 90,
         "crit": 10,
         "hitmin": 1,
@@ -376,7 +376,7 @@
         "name": "Garudyne",
         "element": "wind",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -433,7 +433,7 @@
         "name": "Bufudyne",
         "element": "ice",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "freeze",
         "ailchance": 30,
         "crit": 0
@@ -451,7 +451,7 @@
         "name": "Diamond Dust",
         "element": "ice",
         "basepower": 300,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "freeze",
         "ailchance": 30,
         "crit": 0
@@ -505,7 +505,7 @@
         "name": "Agidyne",
         "element": "fire",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "burn",
         "ailchance": 30,
         "crit": 0
@@ -523,7 +523,7 @@
         "name": "Inferno",
         "element": "fire",
         "basepower": 300,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "burn",
         "ailchance": 30,
         "crit": 0
@@ -577,7 +577,7 @@
         "name": "Ziodyne",
         "element": "elec",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "shock",
         "ailchance": 30,
         "crit": 0
@@ -595,7 +595,7 @@
         "name": "Thunder Reign",
         "element": "elec",
         "basepower": 300,
-        "baseacc": 95,
+        "baseacc": 99,
         "ailment": "shock",
         "ailchance": 30,
         "crit": 0
@@ -632,7 +632,7 @@
         "name": "Psiodyne",
         "element": "psi",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -646,7 +646,7 @@
         "name": "Psycho Force",
         "element": "psi",
         "basepower": 300,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -681,7 +681,7 @@
         "name": "Freidyne",
         "element": "nuke",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -695,7 +695,7 @@
         "name": "Atomic Flare",
         "element": "nuke",
         "basepower": 300,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -730,7 +730,7 @@
         "name": "Kougaon",
         "element": "bless",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -772,7 +772,7 @@
         "name": "Eigaon",
         "element": "curse",
         "basepower": 150,
-        "baseacc": 95,
+        "baseacc": 99,
         "crit": 0
     },
     {
@@ -783,6 +783,27 @@
         "crit": 0
     },
     {
+        "name": "Megido",
+        "element": "almighty",
+        "basepower": "120",
+        "baseacc": "95",
+        "crit":0
+    },
+    {
+        "name": "Megidola",
+        "element": "almighty",
+        "basepower": "180",
+        "baseacc": "95",
+        "crit":0
+    },
+    {
+        "name": "Megidolaon",
+        "element": "almighty",
+        "basepower": "325",
+        "baseacc": "95",
+        "crit":0
+    },
+    {
         "name": "Poisma",
         "ailment": "poison",
         "ailchance": 60
@@ -790,7 +811,7 @@
     {
         "name": "Poison Mist",
         "ailment": "poison",
-        "ailchance": 30
+        "ailchance": 40
     },
     {
         "name": "Dormina",
@@ -800,7 +821,7 @@
     {
         "name": "Lullaby",
         "ailment": "sleep",
-        "ailchance": 30
+        "ailchance": 40
     },
     {
         "name": "Marin Karin",
@@ -810,7 +831,7 @@
     {
         "name": "Brain Jack",
         "ailment": "brainwash",
-        "ailchance": 30
+        "ailchance": 40
     },
     {
         "name": "Makajama",
@@ -820,17 +841,17 @@
     {
         "name": "Makajamaon",
         "ailment": "forget",
-        "ailchance": 30
+        "ailchance": 40
     },
     {
         "name": "Taunt",
-        "ailment": "Rage",
+        "ailment": "rage",
         "ailchance": 60
     },
     {
         "name": "Wage War",
-        "ailment": "poison",
-        "ailchance": 30
+        "ailment": "rage",
+        "ailchance": 40
     },
     {
         "name": "Evil Touch",
@@ -840,7 +861,7 @@
     {
         "name": "Evil Smile",
         "ailment": "fear",
-        "ailchance": 30
+        "ailchance": 40
     },
     {
         "name": "Pulinpa",
@@ -850,7 +871,7 @@
     {
         "name": "Tentarafoo",
         "ailment": "confuse",
-        "ailchance": 60
+        "ailchance": 40
     }
 
 ]
